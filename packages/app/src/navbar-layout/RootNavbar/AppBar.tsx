@@ -11,6 +11,7 @@ import { TextLabelWithIcon } from './TextLabelWithIcon';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import SettingsIcon from '@material-ui/icons/Settings';
+import { TopSearchBar } from '../../components/TopSearchBar';
 
 export default function ButtonAppBar() {
   const items = [
@@ -34,6 +35,7 @@ export default function ButtonAppBar() {
               </MenuItem>
             </Link>
           ))}
+          <TopSearchBar />
         </Toolbar>
       </AppBar>
     </Box>
