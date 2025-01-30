@@ -1,0 +1,3 @@
+[class^='BackstagePage'] {
+  overflow-y: unset !important; /* prevent double scroll */
+}

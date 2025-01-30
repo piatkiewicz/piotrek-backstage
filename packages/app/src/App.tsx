@@ -36,6 +36,8 @@ import { AppRouter, FlatRoutes } from '@backstage/core-app-api';
 import { CatalogGraphPage } from '@backstage/plugin-catalog-graph';
 import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
+import './App.css';
+import { TopSearchBar } from './components/TopSearchBar';
 
 const app = createApp({
   apis,
@@ -103,7 +105,10 @@ export default app.createRoot(
     <AlertDisplay />
     <OAuthRequestDialog />
     <AppRouter>
-      <Root>{routes}</Root>
+      <Root>
+        <TopSearchBar />
+        {routes}
+      </Root>
     </AppRouter>
   </>,
 );
