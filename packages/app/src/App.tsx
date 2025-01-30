@@ -24,7 +24,8 @@ import { UserSettingsPage } from '@backstage/plugin-user-settings';
 import { apis } from './apis';
 import { entityPage } from './components/catalog/EntityPage';
 import { searchPage } from './components/search/SearchPage';
-import { Root } from './components/Root';
+import { RootNavbar } from './navbar-layout/RootNavbar/RootNavbar';
+import './App.css';
 
 import {
   AlertDisplay,
@@ -103,7 +104,7 @@ export default app.createRoot(
     <AlertDisplay />
     <OAuthRequestDialog />
     <AppRouter>
-      <Root>{routes}</Root>
+      <RootNavbar>{routes}</RootNavbar>
     </AppRouter>
   </>,
 );
